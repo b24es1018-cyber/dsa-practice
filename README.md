@@ -17,7 +17,7 @@ Solving Striver's SDE Sheet systematically in **C++**. Tracking progress, patter
 
 | Topic | Status | Problems Done |
 |---|---|---|
-| Arrays | 🟡 In Progress | 12 / 24 |
+| Arrays | ⬜ In Progress | 0 / 24 |
 | Linked Lists | ⬜ Not Started | 0 / 18 |
 | Binary Search | ⬜ Not Started | 0 / 12 |
 | Stacks & Queues | ⬜ Not Started | 0 / 14 |
@@ -28,7 +28,7 @@ Solving Striver's SDE Sheet systematically in **C++**. Tracking progress, patter
 | Greedy | ⬜ Not Started | 0 / 16 |
 | Tries | ⬜ Not Started | 0 / 7 |
 
-**Overall: 21% complete (95 / 455)**
+**Overall: 0% complete (0 / 455)**
 
 > Updated weekly every Sunday.
 
