@@ -6,7 +6,7 @@ Solving Striver's SDE Sheet systematically in **C++**. Tracking progress, patter
 
 ## 👤 About Me
 
-- **Name:** [Your Name]
+- **Name:** Nishant
 - **College:** IIT Jodhpur — B.Tech CSE (3rd Year)
 - **Goal:** Placement-ready by December 2025
 - **Profile:** [LinkedIn](https://linkedin.com/in/your-profile) • [LeetCode](https://leetcode.com/your-profile)
@@ -17,7 +17,7 @@ Solving Striver's SDE Sheet systematically in **C++**. Tracking progress, patter
 
 | Topic | Status | Problems Done |
 |---|---|---|
-| Arrays | ⬜ In Progress | 0 / 24 |
+| Arrays | 🟡  In Progress | 0 / 24 |
 | Linked Lists | ⬜ Not Started | 0 / 18 |
 | Binary Search | ⬜ Not Started | 0 / 12 |
 | Stacks & Queues | ⬜ Not Started | 0 / 14 |
