@@ -9,7 +9,7 @@ string reverseWords(string s){
     int i=s.size()-1;
     string result="";
     while(i>=0){
-        if(i>0 && s[i]==' '){
+        while(i>=0 && s[i]==' '){
             i--;
         }
         if(i<0) break;
