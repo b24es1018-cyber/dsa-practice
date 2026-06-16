@@ -1,5 +1,8 @@
-class Solution {
-public:
+/*
+create a map and store the address and check if it repeats
+*/
+#include <bits/stdc++.h>
+using namespace std;
     bool hasCycle(ListNode *head) {
         ListNode* temp = head;
 
