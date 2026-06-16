@@ -1,10 +1,8 @@
 /**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
+first copy next value to current node
+then point nodenext to nodenextnext 
+so that both have same values node and node next
+now store the nodenext to temp and delete
  */
 class Solution {
 public:
