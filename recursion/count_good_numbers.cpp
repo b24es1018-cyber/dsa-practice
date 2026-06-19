@@ -1,5 +1,8 @@
-class Solution {
-public:
+/*
+first cont  even positions by ((n+1)/2) and odd by(n/2) then use power(5,evenpos)*power(4,oddpos)
+*/
+#include <bits/stdc++.h>
+using namespace std;
     const long long MOD = 1000000007;
 
     long long power(long long x, long long n) {
@@ -21,4 +24,3 @@ public:
 
         return ans;
     }
-};
