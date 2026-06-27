@@ -1,5 +1,0 @@
-language: c++
-fuzz_targets:
-  - parser_fuzzer
-  - graph_fuzzer
-  - tree_fuzzer
