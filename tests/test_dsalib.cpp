@@ -6,6 +6,8 @@
 #include "dsalib/graph.h"
 #include "dsalib/input_parser.h"
 #include "dsalib/linked_list.h"
+#include "dsalib/math_utils.h"
+#include "dsalib/sorting.h"
 #include "dsalib/stack_queue.h"
 #include "dsalib/string_algo.h"
 #include "dsalib/tree.h"
@@ -20,6 +22,8 @@ int main(){
     assert(DynamicProgramming::lcs("abcde","ace")==3); std::vector<int> wt; wt.push_back(1);wt.push_back(3);wt.push_back(4); std::vector<int> val; val.push_back(15);val.push_back(20);val.push_back(30); assert(DynamicProgramming::knapsack01(wt,val,4)==35); assert(DynamicProgramming::edit_distance("kitten","sitting")==3); assert(DynamicProgramming::coin_change_min(wt,6)==2); assert(DynamicProgramming::lis(nums)==3);
     ArrayStack<int> st; st.push(9); assert(st.top()==9); Queue<int> q; q.push(8); assert(q.front()==8); std::vector<int> win; win.push_back(1);win.push_back(3);win.push_back(-1);win.push_back(5); assert(StackQueueAlgorithms::sliding_window_max(win,2)[0]==3); LRUCache<int,int> cache(1); cache.put(1,2); int out=0; assert(cache.get(1,out)&&out==2);
     assert(StringAlgo::kmp_search("ababa","aba").size()==2); assert(StringAlgo::anagram("listen","silent")); assert(StringAlgo::palindrome("level")); Trie trie; trie.insert("cat"); assert(trie.search("cat")); assert(trie.starts_with("ca"));
+    std::vector<int> sort_values; sort_values.push_back(5);sort_values.push_back(-2);sort_values.push_back(9);sort_values.push_back(5);sort_values.push_back(0); std::vector<int> ms=sort_values; Sorting::merge_sort(ms); assert(Sorting::is_sorted(ms)); std::vector<int> qs=sort_values; Sorting::quick_sort(qs); assert(Sorting::is_sorted(qs)); std::vector<int> hs=sort_values; Sorting::heap_sort(hs); assert(Sorting::is_sorted(hs)); assert(Sorting::counting_sort(sort_values)[0]==-2); assert(Sorting::radix_sort(sort_values)[4]==9); assert(Sorting::external_merge_sort(sort_values,2).size()==5); assert(Sorting::stability_analysis().merge_sort_stable);
+    assert(MathUtils::gcd(54,24)==6); assert(MathUtils::lcm(12,18)==36); assert(MathUtils::mod_pow(2,10,1000)==24); assert(MathUtils::sieve(10).size()==4); assert(MathUtils::prime_factorization(84).size()==3); MathUtils::Matrix ma(2,std::vector<long long>(2,1)); MathUtils::Matrix mb=MathUtils::multiply(ma,ma); assert(mb[0][0]==2); assert(MathUtils::fibonacci(10)==55);
     std::vector<unsigned char> enc=InputParser::encode_array(nums); InputParser p(enc); assert(p.parse_array().size()==4); std::vector<unsigned char> gl=InputParser::encode_graph(g); InputParser gp(gl); Graph g2=gp.parse_graph(); assert(g2.size()==4); std::vector<unsigned char> ll=InputParser::encode_linked_list(nums); InputParser lp(ll); assert(lp.parse_linked_list().size()==4);
     std::cout << "dsalib tests passed\n"; return 0; }
 // test_dsalib reference note 0001: behavior is deterministic, bounds checked where practical, and intended for practice workloads.
